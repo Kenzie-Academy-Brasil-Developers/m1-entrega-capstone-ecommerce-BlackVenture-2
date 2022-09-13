@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Inter:wght@500;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+.headerContainer{
+    width: 1500px;
+    display: flex;
+    padding: 23px 0;
+}
+
+.logoContainer{
+    width: 70%;
+    animation: fadeIn 1.5s;
+}
+
+.navContainer{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    animation: fadeIn 4s;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.navContainer button{
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+main{
+    max-width: 1520px;
+    display: flex;
+    justify-content: center;
+}
+
+.containerProdutos{
+    animation: fadeIn 1.5s;
+    min-width: 1105px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.cardProduto{
+    transition: all 0.5s;
+    padding: 0px;
+    width: 296px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 4px solid #F5F5F5;
+}
+
+figure{
+    background: #F5F5F5;
+}
+
+.cardProduto figure img{
+    width: 296px;
+    height: 154px;
+}
+
+.cardCamiseta{
+    margin: 0px 15px;
+    width: 73px;
+    background-color: #2E245E;
+}
+
+.cardAcessorio{
+    margin: 0px 15px;
+    width: 76px;
+    background-color: #2E245E;
+
+}
+
+.cardProduto span p{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    width: 70px;
+    padding: 12px 5px;
+    color: #FFFFFF;
+    
+}
+
+.cardProduto h2{
+    margin: 0px 12px 0px 15px;
+    width: 269px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+p:nth-child(4){
+    margin: 0px 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #242424;
+}
+
+p:nth-child(5){
+    margin: 0px 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2E245E;
+}
+
+.cardProduto button{
+    position: relative;
+    width: 152px;
+    cursor: pointer;
+    text-align: initial;
+    background-color: white;
+    border: none;
+    margin: 0px 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #242424;
+    margin-bottom: 15px;
+    text-align: -webkit-center;
+}
+
+.containerCarrinho{
+    display: flex;
+    flex-direction: column;
+    width: 785px;
+    animation: fadeIn 4s;
+}
+
+.containerCarrinho section input{
+    transition: all 1s;
+    padding: 17px 14px;
+    width: 246px;
+    height: 50px;
+    left: 1138px;
+    top: 122px;
+    background: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    outline: none;
+}
+
+.containerPesquisa button{
+    width: 96px;
+    height: 50px;
+    left: 1392px;
+    top: 122px;
+    background: #37268C;
+    border: 2px solid #37268C;
+    transition: all 1s;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.carrinhoDeCompras{
+    margin-top: 30px;
+}
+
+.carrinhoDeCompras h2{
+    width: 347px;
+    background-color: #37268C;
+    padding: 13px;
+    height: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.containerCarrinho{
+    margin-top: 10px;
+}
+
+.listaProdutos{
+    
+    text-align: center;
+    width: 347px;
+    height: 214px;
+    background-color: #F5F5F5;;
+    overflow-y: auto;
+}
+
+.listaProdutos p:nth-child(1){
+    padding-top: 82px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: #292929;
+}
+
+.listaProdutos p:nth-child(2){
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #242424;
+}
+
+.produtoCart{
+    display: flex;
+    padding: 15px 0px;
+}
+
+.produtoCart img{
+    margin: 12.5px 14px;
+    width: 88px;
+    height: 67px
+}
+
+.produtoCart h3{
+    color: #333333;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.produtoCart p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2E245E;
+}
+
+.produtoCart button{
+    border: none;
+    background-color: #F5F5F5;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.produtoCart div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: flex-start;
+}
+
+.detalhesCart{
+    width: 347px;
+    background: #292929;
+}
+
+.detalhesCart section{
+    padding: 12px;
+    justify-content: space-between;
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.nenhumProduto{
+    padding-top: 50px;
+    width: -webkit-fill-available;
+}
+
+
